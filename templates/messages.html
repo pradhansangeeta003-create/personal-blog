@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Messages - My Personal Blog</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Blog</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Contact Messages</h2>
+
+        {% for message in messages %}
+
+        <article>
+
+            <h3>{{ message["name"] }}</h3>
+
+            <p>
+                <strong>Email:</strong>
+                {{ message["email"] }}
+            </p>
+
+            <p>
+                {{ message["message"] }}
+            </p>
+
+        </article>
+
+        {% else %}
+
+        <p>No messages yet.</p>
+
+        {% endfor %}
+
+    </main>
+
+</body>
+
+</html>

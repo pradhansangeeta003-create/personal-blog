@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - My Personal Blog</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Blog</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+            <a href="/create-post">Create Post</a>
+            <a href="/messages">Messages</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+
+            <h2>Welcome, {{ username }}!</h2>
+
+            <p>Welcome to your personal blog dashboard.</p>
+
+            <div class="dashboard-links">
+
+                <a href="/create-post">
+                    Create New Post
+                </a>
+
+                <a href="/blog">
+                    View My Blog Posts
+                </a>
+
+                <a href="/messages">
+                    View Contact Messages
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

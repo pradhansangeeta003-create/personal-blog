@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - My Personal Blog</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Blog</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+    </nav>
+    </header>
+    <main>
+
+    <section class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you would like to get in touch with me,
+            feel free to send me a message.
+        </p>
+
+        <form method="POST">
+
+            <label>Name</label>
+            <br>
+
+            <input type="text" name="name" required>
+
+            <br><br>
+
+            <label>Email</label>
+            <br>
+
+            <input type="email" name="email" required>
+
+            <br><br>
+
+            <label>Message</label>
+            <br>
+
+            <textarea name="message" rows="6" required></textarea>
+
+            <br><br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+</main>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home - My Personal Blog</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Blog</h1>
+
+        <nav>
+            
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/register">Register</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h2>Welcome to My Personal Blog</h2>
+
+            <p>
+                Welcome! This is my personal space where
+                I share my thoughts, experiences and knowledge.
+            </p>
+
+            <a href="/blog">Read My Blog</a>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
