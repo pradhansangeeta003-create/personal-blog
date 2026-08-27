@@ -70,8 +70,7 @@ personal-blog/
 │
 ├── app.py
 ├── blog.db
-└── README.md
-
+└── README.md'''
 ⚙️ How the Project Works
 1. 📝 User Registration
 New users can create an account by providing their required details. The information is stored in the SQLite database.
@@ -115,3 +114,4 @@ The objective of this project is to build a practical blogging website that demo
 👩‍💻 Author
 Sangeeta Pradhan
 Python Developer | AI & ML Enthusiast
+
